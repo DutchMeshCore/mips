@@ -2,6 +2,10 @@
 
 Thank you for helping improve mesh decision making.
 
+## Labels
+
+Proposal work uses GitHub **labels** (not title prefixes). See [`.github/labels.md`](.github/labels.md) for the full list. Common labels: `WIP` (draft PR), `status:candidate` (decision window), `needs-maintainer`.
+
 ## Before you open a proposal
 
 1. Check existing proposals in `proposals/`.
