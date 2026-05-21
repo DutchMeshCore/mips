@@ -27,3 +27,5 @@ jobs:
           config: ".markdownlint-cli2.yaml"
           globs: "**/*.md"
 
+# Required checks for main run on every PR via .github/workflows/ci.yml.
+

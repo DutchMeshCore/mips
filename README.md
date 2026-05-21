@@ -36,6 +36,12 @@ This repository uses [PullPact](https://pullpact.online) for reaction voting on 
 5. Decide after the decision window.
 6. Merge into `proposals/` with final status and rationale.
 
+## Repository setup
+
+- Labels: [`.github/labels.md`](.github/labels.md)
+- Branch rules: squash merges to `main`, required CI, no direct pushes
+- CODEOWNERS: [`.github/CODEOWNERS`](.github/CODEOWNERS)
+
 ## Repository layout
 
 - `proposals/`: accepted or historical MIP documents

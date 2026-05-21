@@ -12,6 +12,8 @@ This repository is governed by community process, public discussion, written dec
 
 ## Maintainers
 
+GitHub team: [@DutchMeshCore/mips-maintainers](https://github.com/orgs/DutchMeshCore/teams/mips-maintainers) (`maintain` on this repository).
+
 Maintainers are process stewards. They are responsible for:
 
 - triaging issues and proposal PRs,
@@ -67,6 +69,13 @@ When maintainers disagree on process outcome:
 1. document disagreement in the relevant PR or issue,
 2. request one extra maintainer review,
 3. if still unresolved, use fallback vote and record rationale.
+
+## Repository Access
+
+- `main` is protected: changes land through pull requests with required CI checks (`Validate Proposals`, `Markdown Lint`).
+- Merges use **squash** only; merge commits and rebase merges are disabled.
+- Direct pushes to `main` are not allowed (including administrators).
+- Install [PullPact](https://github.com/apps/pullpact/installations/new) on this repository; add the `PullPact` check to the ruleset when the app is active.
 
 ## Transparency Requirements
 
