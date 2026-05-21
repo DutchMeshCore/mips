@@ -1,0 +1,12 @@
+config:
+  default: true
+  MD013: false
+  MD012: false
+  MD034: false
+  MD041: false
+  MD033: false
+globs:
+  - "**/*.md"
+ignores:
+  - ".github/**/README.md"
+

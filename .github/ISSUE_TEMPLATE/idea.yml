@@ -1,0 +1,54 @@
+name: MIP Idea
+description: Propose an idea for a future Mesh Improvement Proposal
+title: "Idea: "
+labels:
+  - status:draft
+  - needs-maintainer
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for early-stage ideas. Keep it concise and concrete.
+  - type: input
+    id: problem
+    attributes:
+      label: What decision or problem is this about?
+      placeholder: Describe the problem in one or two sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: affected
+    attributes:
+      label: Who is affected?
+      description: Operators, node owners, gateway maintainers, regions, newcomers, others.
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Expected scope
+      options:
+        - National
+        - Regional
+        - Experimental
+        - Recommendation
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Known options
+      description: List possible approaches, even if incomplete.
+    validations:
+      required: true
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency
+      options:
+        - Normal
+        - Urgent (operational risk)
+        - Emergency (safety or legal risk)
+    validations:
+      required: true
+

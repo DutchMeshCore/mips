@@ -1,0 +1,28 @@
+name: Process Question
+description: Ask a question about MIP process, status, or usage
+title: "Question: "
+labels:
+  - needs-maintainer
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: What do you want clarification on?
+      placeholder: Example: When does the 14-day window start?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Add links to relevant issue, proposal, or pull request.
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: What outcome are you looking for?
+      description: Example: process clarification, maintainer action, wording update.
+    validations:
+      required: false
+

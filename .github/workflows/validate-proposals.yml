@@ -1,0 +1,33 @@
+name: Validate Proposals
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "proposals/**/*.md"
+      - "drafts/**/*.md"
+      - "scripts/validate_proposals.py"
+  push:
+    branches:
+      - main
+    paths:
+      - "proposals/**/*.md"
+      - "drafts/**/*.md"
+      - "scripts/validate_proposals.py"
+
+jobs:
+  validate:
+    name: Validate Proposals
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Validate proposal files
+        run: python scripts/validate_proposals.py
+
